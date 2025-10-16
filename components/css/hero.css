@@ -1,0 +1,171 @@
+@layer components {
+    .hero-section {
+        position: relative;
+        & ::before{
+            content: '';
+            position: absolute;
+            inset: 0;
+            width: 70%;
+            height: 100%;
+            background: var(--gradient-blue);
+            border-radius: 0 0 35px 35px;
+            z-index: -1;
+            @media screen and (max-width: 1024px) {
+                width: 100%;
+                height: 78%;
+            }
+        }
+
+        & .calculator-wrapper{
+            margin: var(--spacing-11) var(--spacing-18);
+
+            @media screen and (max-width: 1024px) {
+                margin: var(--spacing-4) var(--spacing-5);
+            }
+
+            @media screen and (max-width: 425px) {
+                margin: var(--spacing-4) var(--spacing-3);
+            }
+
+            & .icon-wrapper {
+                margin-bottom: var(--spacing-3);
+                img {
+                    width: 64px;
+                    height: 64px;
+                }
+                @media screen and (max-width: 1024px) {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: var(--spacing-0);
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+            & .content-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: var(--spacing-4);
+                & .content {
+                    margin-block: var(--spacing-9);
+                    text-align: left;
+                    & .content-desc {
+                        max-width: 465px;
+                        margin-top: var(--spacing-4);
+                        color: var(--clr-grey-500);
+                    }
+                }
+                @media screen and (max-width: 1024px) {
+                    grid-template-columns: 1fr;
+                    gap: var(--spacing-0);
+                    & .content {
+                        text-align: center;
+                        margin-block: var(--spacing-5);
+                        @media screen and (max-width: 425px) {
+                            margin-block: var(--spacing-4);
+                        }
+                        & .content-desc{
+                            max-width:fit-content;
+                        }
+                    }
+                }
+
+                & .calculator {
+                    background-color: var(--clr-white);
+                    padding: var(--spacing-4);
+                    border-radius: var(--spacing-2);
+                    box-shadow: 16px 32px 56px 0 rgba(143, 174, 207, 0.25);
+
+                    & .calc-form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: var(--spacing-4);
+
+                        @media screen and (max-width: 1024px) {
+                            gap: var(--spacing-3);
+                        }
+                        & .metric-selection {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: var(--spacing-3);
+                            align-items: center;
+
+                            & input[type="radio"] {
+                                width: 31px;
+                                height: 31px;
+                                accent-color: var(--clr-blue-500);
+                            }
+                            & label {
+                                cursor: pointer;
+                            }
+
+                        }
+
+                        & .input-group {
+                            display: flex;
+                            gap: var(--spacing-3);
+
+                            @media screen and (max-width: 425px) {
+                                flex-direction: column;
+                                gap: var(--spacing-2);
+                            }
+
+                            & .input-wrapper {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: column;
+                                gap: var(--spacing-1);
+                                position: relative;
+                                & .unit {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 11%;
+                                    color: var(--clr-blue-500);
+                                }
+                                & label {
+                                    color: var(--clr-grey-500);
+                                }
+                                & input {
+                                    width: 100%;
+                                    padding: var(--spacing-2) var(--spacing-3);
+                                    border: 1px solid var(--clr-grey-500);
+                                    border-radius: 12px;
+                                    outline: none;
+                                    transition: border-color 0.3s ease;
+
+                                    &:focus {
+                                        border-color: var(--clr-blue-500);
+                                        box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.3);
+                                    }
+
+                                    &::placeholder {
+                                        color: var(--clr-grey-500);
+                                    }
+                                }
+                            }
+                        }
+
+                        & .result-wrapper {
+                            padding: var(--spacing-4);
+                            background-color: var(--clr-blue-500);
+                            border-radius: var(--spacing-2) var(--spacing-18) var(--spacing-18) var(--spacing-2);
+                            color: var(--clr-white);
+                             & .result {
+                                margin-bottom: var(--spacing-2);
+                            }
+                            @media screen and (max-width: 425px) {
+                                border-radius: var(--spacing-2);
+                                & .result {
+                                    margin-bottom: var(--spacing-3);
+                                }
+                            }
+                           
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

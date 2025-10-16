@@ -1,0 +1,7 @@
+@layer base, components;
+
+
+/* Reset css */
+@import url('./components/css/_base.css');
+
+@import url('./components/css/hero.css');
