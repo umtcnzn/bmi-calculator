@@ -1,0 +1,48 @@
+@layer components {
+    .limits-section {
+        .limits-content-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-4);
+            padding: var(--spacing-13) var(--spacing-18);
+
+        
+           & .content-and-gender {
+            display: flex;
+            gap: var(--spacing-4);
+                & .limits-content {
+                max-width: 565px;
+                    & .limit-desc {
+                        margin-top: var(--spacing-4);
+                        color: var(--clr-grey-500);
+                    }
+                }
+                & .card.gender {
+                    margin-left: auto;
+                    margin-right: 100px;
+                }   
+           }
+
+           & .age-and-muscle {
+                display: flex;
+                gap: var(--spacing-4);
+                justify-content: end;
+           }
+
+           & .pregnancy-and-race {
+                display: flex;
+                gap: var(--spacing-4);
+                justify-content: center;
+           }
+
+            
+
+            & .right-curved-line {
+                position: absolute;
+                top: 40%;
+                left: 20%;
+            }
+        }
+    }
+}

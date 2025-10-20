@@ -1,0 +1,65 @@
+@layer utilities {
+    .input-unit-wrapper {
+        position: relative;
+        input{
+            width: 100%;
+            padding: var(--spacing-2) var(--spacing-3);
+            border: 1px solid var(--clr-grey-500);
+            border-radius: 12px;
+            outline: none;
+            transition: border-color 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                border-color: var(--clr-blue-500);
+            }
+
+            &::placeholder {
+                color: var(--clr-grey-500);
+            }
+        }
+        .unit {
+            position: absolute;
+            top: 30%;
+            right: 11%;
+            color: var(--clr-blue-500);
+        }
+    }
+
+    .hero-bg {
+        position: absolute;
+        inset: 0;
+        width: 70%;
+        height: 100%;
+        z-index: -10;
+        background: var(--gradient-blue);
+        border-radius: 0px 0px 35px 35px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        
+    }
+
+    .card {
+        background-color: var(--clr-white);
+        border-radius: var(--spacing-2);
+        padding: var(--spacing-4);
+        box-shadow: 16px 32px 56px 0px rgba(143,174,207,0.25);
+        max-width: 365px;
+
+        & img, h3 {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        & .card-title {
+            margin-left: var(--spacing-2);
+        }
+
+        & .card-desc {
+            margin-top: var(--spacing-2);
+            color: var(--clr-grey-500);
+        }
+
+    }
+}

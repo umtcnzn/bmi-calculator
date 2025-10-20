@@ -99,8 +99,13 @@
   }
 
   body {
-    background: var(--gradient-blue);
+    background-color: var(--clr-white);
     color: var(--clr-blue-900);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
   }
 
   /* Text presets */
@@ -137,28 +142,24 @@
 
   .text-preset-6 {
     font-size: 1rem; /* 16px */
-    line-height: 1.5;
     font-weight: 600; /* Semi-bold */
     letter-spacing: 0;
   }
 
   .text-preset-6-regular {
     font-size: 1rem; /* 16px */
-    line-height: 1.5;
     font-weight: 400; /* Regular */
     letter-spacing: 0;
   }
 
   .text-preset-7 {
     font-size: 0.875rem; /* 14px */
-    line-height: 1.5;
     font-weight: 700; /* Bold */
     letter-spacing: 0;
   }
 
   .text-preset-7-regular {
     font-size: 0.875rem; /* 14px */
-    line-height: 1.5;
     font-weight: 400; /* Regular */
     letter-spacing: 0;
   }
