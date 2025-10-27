@@ -187,6 +187,25 @@
                             }
                            
                         }
+
+                        & .result-wrapper.active {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: var(--spacing-3);
+
+                            @media screen and (max-width: 425px) {
+                                grid-template-columns: 1fr;
+                            }
+                            & .result {
+                                display: flex;
+                                flex-direction: column;
+                                margin-bottom: 0;
+                                gap: var(--spacing-1);
+                            }
+                            & .result-desc {
+                                align-self: center;
+                            }
+                        }
                         
                     }
                 }
