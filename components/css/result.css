@@ -1,45 +1,41 @@
 @layer components {
-    .result-section {
-        & .result-wrapper {
-            padding-inline: var(--spacing-18);
-            padding-bottom: var(--spacing-11);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-16);
+  .result-section {
+    & .result-wrapper {
+      padding-inline: var(--spacing-18);
+      padding-bottom: var(--spacing-11);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-16);
 
-            
-            & .result-img {
-                margin-top: var(--spacing-7);
-                img{
-                    object-fit: cover;
-                }
-            }
-
-            & .result-content-wrapper {
-                display: flex;
-                flex-direction: column;
-
-                & .left-curved-line {
-                    width: 100%;
-                    margin-bottom: var(--spacing-5);
-                    img {
-                        margin-left: auto;
-                        margin-right: var(--spacing-4);
-                    }
-
-                }
-                
-                & .result-content {
-                    max-width: 465px;
-                 
-                    & .result-desc {
-                        color: var(--clr-grey-500);
-                        margin-top: var(--spacing-4);
-                    }
-                }
-                
-            }
-
+      & .result-img {
+        margin-top: var(--spacing-7);
+        img {
+          object-fit: cover;
         }
+      }
+
+      & .result-content-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        & .left-curved-line {
+          width: 100%;
+          margin-bottom: var(--spacing-5);
+          img {
+            margin-left: auto;
+            margin-right: var(--spacing-4);
+          }
+        }
+
+        & .result-content {
+          max-width: 465px;
+
+          & .result-desc {
+            color: var(--clr-grey-500);
+            margin-top: var(--spacing-4);
+          }
+        }
+      }
     }
+  }
 }

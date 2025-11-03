@@ -1,5 +1,7 @@
-@layer base{
-  *, *::before, *::after {
+@layer base {
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
   }
 
@@ -18,30 +20,48 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  img, picture, video, canvas, svg {
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
     display: block;
     max-width: 100%;
   }
 
-  input, button, textarea, select {
+  input,
+  button,
+  textarea,
+  select {
     font: inherit;
   }
 
-  p, h1, h2, h3, h4, h5, h6 {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     overflow-wrap: break-word;
   }
 
   p {
     text-wrap: pretty;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     text-wrap: balance;
   }
 
-  #root, #__next {
+  #root,
+  #__next {
     isolation: isolate;
   }
-
 
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
@@ -50,32 +70,31 @@
   }
 
   /* Firefox */
-  input[type=number] {
+  input[type="number"] {
     appearance: textfield;
     -webkit-appearance: none;
     -moz-appearance: textfield;
   }
 
-
   @font-face {
-    font-family: 'Inter';
-    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
     font-weight: 100 900;
     font-display: swap;
   }
 
   /* Variables */
   :root {
-    --font-family: 'Inter', 'system-ui', sans-serif;
-    --clr-white: #FFFFFF;
+    --font-family: "Inter", system-ui, sans-serif;
+    --clr-white: #ffffff;
     --clr-black: #000000;
-    --clr-grey-300: #ACC1DE;
-    --clr-grey-500: #5E6E85;
-    --clr-blue-100: #E1E7FE;
-    --clr-blue-300: #B3D3F1;
-    --clr-blue-500: #345FF6;
+    --clr-grey-300: #acc1de;
+    --clr-grey-500: #5e6e85;
+    --clr-blue-100: #e1e7fe;
+    --clr-blue-300: #b3d3f1;
+    --clr-blue-500: #345ff6;
     --clr-blue-900: #253347;
-    --gradient-blue: linear-gradient(to right,#ffffff 0%,#D6E6FE 100%);
+    --gradient-blue: linear-gradient(to right, #ffffff 0%, #d6e6fe 100%);
     --spacing-0: 0;
     --spacing-1: 0.5rem;
     --spacing-2: 1rem;
@@ -90,12 +109,12 @@
     --spacing-12: 6rem;
     --spacing-13: 6.5rem;
     --spacing-16: 8rem;
-    --spacing-18: 9rem; 
+    --spacing-18: 9rem;
   }
 
   html {
     font-family: var(--font-family);
-    letter-spacing: -0.5;
+    letter-spacing: -0.05em;
   }
 
   body {

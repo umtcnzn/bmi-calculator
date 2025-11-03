@@ -1,35 +1,35 @@
 @layer components {
-    .tips-section{
-        position: relative;
-        overflow: hidden;
-        & .tips-container {
-            position: absolute;
-            inset: 0;
-            z-index: -10;
-            margin: 10px;
-            border-radius: 35px;
-            opacity: 0.25;
-            background: var(--gradient-blue);
-        }
-
-        & .tips-content {
-            padding: var(--spacing-12) var(--spacing-16);
-            justify-self: center; 
-            & .tips {
-                display: flex;
-                gap: var(--spacing-4);
-                & .tip {
-                    max-width: 365px;
-                    & img{
-                        margin-bottom: var(--spacing-6);
-                    }
-
-                    & .tip-desc{
-                        margin-top: var(--spacing-3);
-                        color: var(--clr-grey-500);
-                    }
-                }
-            }
-        }
+  .tips-section {
+    position: relative;
+    overflow: hidden;
+    & .tips-container {
+      position: absolute;
+      inset: 0;
+      z-index: -10;
+      margin: 10px;
+      border-radius: 35px;
+      opacity: 0.25;
+      background: var(--gradient-blue);
     }
+
+    & .tips-content {
+      padding: var(--spacing-12) var(--spacing-16);
+      justify-self: center;
+      & .tips {
+        display: flex;
+        gap: var(--spacing-4);
+        & .tip {
+          max-width: 365px;
+          & img {
+            margin-bottom: var(--spacing-6);
+          }
+
+          & .tip-desc {
+            margin-top: var(--spacing-3);
+            color: var(--clr-grey-500);
+          }
+        }
+      }
+    }
+  }
 }
