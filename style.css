@@ -1,7 +1,7 @@
 @layer base, components, utilities;
 
 /* Reset css */
-@import url('./components/css/_base.css');
+@import url('./components/css/base.css');
 
 @import url('./components/css/hero.css');
 
