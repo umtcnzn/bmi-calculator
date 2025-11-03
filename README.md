@@ -55,7 +55,3 @@ This project is a solution to the BMI Calculator challenge from Frontend Mentor.
 ## Author
 
 - GitHub - [@umtcnzn](https://github.com/umtcnzn)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
